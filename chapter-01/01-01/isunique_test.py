@@ -8,9 +8,11 @@ class Test(unittest.TestCase):
         self.unique_words = ('','0','a','asdwe231', 'e[2cov]\'', 'lamp');
         self.non_unique_words = ('aa','00','121','35435','__');
 
-    def test(self):
+    def test_unique(self):
         for w in self.unique_words:
             self.assertEqual(isunique.isUnique(w),True)
+
+    def test_non_unique(self):
         for w in self.non_unique_words:
             self.assertEqual(isunique.isUnique(w),False)
 

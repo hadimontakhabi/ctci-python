@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+import unittest
+import permutation
+
+class TestPermutation(unittest.TestCase):
+    def setUp(self):
+        pass
+    def test():
+        self.assetEqual(permutation.isPermutation('derjis','jers'), False)
+        
